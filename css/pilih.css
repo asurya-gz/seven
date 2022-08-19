@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+@font-face {
+    font-family: 'sembilan';
+    src: url(font/Tasty\ Brownies\ DEMO.ttf);
+}
+
+@font-face {
+    font-family: 'ul';
+    src: url(font/Cheeky\ Rabbit.ttf);
+}
+
+@font-face {
+    font-family: 'tengah';
+    src: url(font/vanillawhale.otf);
+}
+
+
+body {
+    background: url(https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2021/08/19/2664731026.png);
+}
+
+.kata {
+    position: absolute;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 40%;
+    padding-right: 40%;
+    padding-top: 250px;
+    opacity: 85%;
+    font-family: tengah;
+}
+
+.kata h2, .kata p {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kata h2 {
+    font-size: 55px;
+}
+
+.kata p {
+    font-size: 44px;
+}
+
+header {
+    font-family: sembilan;
+}
+
+ul{
+    font-family: ul;
+}
+
+.sidebar {
+    position: fixed;
+    width: 250px;
+    left: -250px;
+    height: 100%;
+    background-color:#042331;
+    transition: all .5s ease;
+}
+
+.sidebar header {
+    font-size: 22px;
+    color: azure;
+    text-align: center;
+    line-height: 70px;
+    background: linear-gradient(#5d9ffb, #0cf5fa);
+    user-select: none;
+}
+
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: wheat;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.1); 
+    border-bottom: 1px solid black;
+    transition: .2s;
+
+}
+
+ul li:hover a {
+    padding-left: 50px;
+    color: darkcyan;
+}
+
+.sidebar a {
+    font-size: 35px;
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    opacity: 80%;
+}
+
+#check {
+    display: none;
+}
+
+label #btn, label #cancel {
+    position: absolute;
+    cursor: pointer;
+    background: #042331;
+    border-radius: 3px;
+
+}
+
+label #btn {
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+
+label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 35px;
+    color: #0a5275;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+
+#check:checked ~ .sidebar {
+    left: 0;
+}
+
+#check:checked ~ label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel {
+    left: 195px;
+}
+
+section {
+    background: url(https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2021/08/19/2664731026.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}

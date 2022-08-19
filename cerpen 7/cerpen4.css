@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'judul';
+    src: url(font/handwriting-draft_free-version.ttf);
+}
+
+@font-face {
+    font-family: 'deskripsi';
+    src: url(font/typewcond_regular.otf);
+}
+
+*, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2021/08/19/2664731026.png);
+    width: 100%;
+    height: auto;
+}
+
+a svg {
+    height: 45px;
+    width: 35px;
+    color: white;
+    opacity: 50%;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+a svg:hover {
+    height: 45px;
+    width: 35px;
+    color: yellow;
+    opacity: 50%;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.container h1 {
+    text-align: center;
+    margin-top: 75px;
+    color: white;
+    opacity: 90%;
+    font-family: judul;
+    font-size: 45px;
+}
+
+
+.wrapper{
+    background-color: azure;
+    width: 75%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    opacity: 80%;
+    border-radius: 7px 7px 7px 7px ;
+    height: auto;
+}
+
+.wrapper p {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 10px 10px 10px;
+    opacity: 100%;
+    font-family: deskripsi;
+}
+
+.next a {
+    height: 45px;
+    width: 35px;
+    color: white;
+    opacity: 50%;
+    margin-left: 85%;
+    padding-top: 30px;
+}
+
+.next a:hover {
+    height: 45px;
+    width: 35px;
+    color: yellow;
+    opacity: 50%;
+    margin-left: 85%;
+    padding-top: 30px;
+}
+
+.saran{
+    margin-top: 25px;
+}
+
+.saran a {
+    background-color: midnightblue;
+    color: white;
+    background-size: 24;
+    text-decoration: none;
+    margin-left: 15%;
+    padding: 10px;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.saran a {
+    background-color: #222;
+    color: wheat;
+    background-size: 24;
+    text-decoration: none;
+    margin-left: 15%;
+    padding: 8px;
+    border-radius: 3px 3px 3px 3px;
+}
